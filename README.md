@@ -17,3 +17,14 @@
 1) localhost:8080으로 들어갈 때 처음 마주하는 페이지
 - static/index.html을 찾아 인식한다. 
 - [spring reference](https://docs.spring.io/spring-boot/docs/current/reference/html/web.html#web) <img width="966" alt="스크린샷 2023-03-30 오후 8 00 39" src="https://user-images.githubusercontent.com/84169614/228816049-656dee83-75c3-4e6c-a0a6-88a864209697.png">
+
+## thymeleaf 엔진
+
+1) 정적으로 띄운 html,css등을 동적으로 만들어주는 Java 템플릿 엔진이다.
+
+
+-----
+
+## Controller
+1) 웹 어플리캐이션 실행시 처음 진입하는 클래스
+2) 디자인패턴 중 하나인 MVC(Model-View-Controller)에서 Controller에 해당한다.
