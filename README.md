@@ -8,5 +8,5 @@
 1. [웹 기초 개발 연습](https://github.com/Tigerfriend1/spring_Java_study/tree/main/ex1-spring)
 - Spring에 대한 소개와 Spring 구조와 프레임 워크에 익숙해지는 시간을 가진다.
 
-2. [회원관리 기능 구현]()
+2. [회원관리 기능 구현](https://github.com/Tigerfriend1/spring_Java_study/tree/main/Member-Management)
 - 회원 도메인과 레포지토리를 만들고, 테이스 케이스를 작성하여 회원 관리 서비스를 개발해본다.
