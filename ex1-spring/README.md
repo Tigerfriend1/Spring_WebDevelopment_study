@@ -1,9 +1,7 @@
-# spring_Java_study
-
-## 세팅
-- Macos
-- Spring Boot 3.0.5
-- IntelliJ
+> ## Setting
+> - MacOS
+> - Spring Boot 3.0.5
+> - IntelliJ
 
 ---
 
@@ -43,7 +41,8 @@
 
 
 ### 2) API방식
-- 객체 혹은 String등을 반환하고, Json형식으로 전달한다.
+- 객체 혹은 String등을 반환하고, Json형식으로 전달한다. 
 <img width="472" alt="스크린샷 2023-04-01 오후 7 06 05" src="https://user-images.githubusercontent.com/84169614/229279799-115e52bb-59f7-44ac-b91f-fd1f3f9e6377.png">
+
 - @ResponseBody 어노테이션을 통해 http body에 객체 자체를 전달하며, Json으로 변환되어 화면에는 Json 객체가 그대로 전달 되는 특징이 있다.<img width="405" alt="스크린샷 2023-04-01 오후 7 07 26" src="https://user-images.githubusercontent.com/84169614/229279862-25ae43f6-b119-4141-bba4-14db24cb08b8.png">
 
