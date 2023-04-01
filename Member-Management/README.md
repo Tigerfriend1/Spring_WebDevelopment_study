@@ -18,3 +18,4 @@
 1. interface : MemberRepository
 
 2. 구현 class : MemoryMemberRepository
+> Optional<Member> : NPE(NullPointerException)을 효율적으로 대처하기 위해 Optional로 감싸준다.
