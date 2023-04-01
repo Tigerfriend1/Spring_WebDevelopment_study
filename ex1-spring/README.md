@@ -33,7 +33,7 @@
 - Model은 데이터와 비즈니스 로직을 담당한다. 아래에서 Model 객체로 활용하였다. <img width="681" alt="스크린샷 2023-04-01 오후 6 58 42" src="https://user-images.githubusercontent.com/84169614/229279462-1fa36c9d-2fde-42c2-af0f-24ecc733da5d.png">
 
 #### View
-- View는 화면에 띄우는 기능을 전담하며, thymeleaf엔진은 이를 전담하는 템플릿 엔진이다. <img width="486" alt="스크린샷 2023-04-01 오후 7 00 52" src="https://user-images.githubusercontent.com/84169614/229279555-7ee534b2-e29f-47b6-a285-7272fcc93aff.png">
+- View는 화면에 띄우는 기능을 전담하며, thymeleaf엔진은 이를 담당해주는 템플릿 엔진이다. <img width="486" alt="스크린샷 2023-04-01 오후 7 00 52" src="https://user-images.githubusercontent.com/84169614/229279555-7ee534b2-e29f-47b6-a285-7272fcc93aff.png">
 
 #### Controller
 - Controller는 Model과 View에 작동을 관여하는 명령 등을 수행하는 명령을 담당한다. 
