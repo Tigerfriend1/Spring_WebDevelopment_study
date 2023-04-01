@@ -25,6 +25,7 @@
 
 -----
 
-## Controller
+## 📌 MVC
+### Controller
 1) 웹 어플리캐이션 실행시 처음 진입하는 클래스
 2) 디자인패턴 중 하나인 MVC(Model-View-Controller)에서 Controller에 해당한다.
