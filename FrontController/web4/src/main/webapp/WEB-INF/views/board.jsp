@@ -6,5 +6,6 @@
 <body>
     <h1>Board.jsp</h1>
     <hr>
+    <h1>유저네임 : ${username}</h1>
 </body>
 </html>
