@@ -5,6 +5,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -22,14 +23,22 @@ public class FrontController extends HttpServlet {
         System.out.println("action + "+action);
 
         if(action.equals("/board.do")){ //들어온 입력의 분기처리? --> 라우터!!! 즉, 라우팅하는 코드
+            req.setAttribute("username", "ssar");
+            //리퀘스트를 두번만들지 않고, 내부적으로 바로 전달함.
+            req.getRequestDispatcher("/WEB-INF/views/board.jsp").forward(req,resp); //내부접근이라 WEB-INF 접근 가능
+
             //302
-            resp.setStatus(302); //ReDirection
+            //resp.setStatus(302); //ReDirection
             //네이버로 이동시킴 단, 302로 리 다이렉션상태를 만들어줘야함
             //resp.setHeader("Location", "https://www.naver.com");
-            resp.setHeader("Location", "board.jsp"); //localhost:8080은 안적어도됨. 내꺼는 디폴트
+            //resp.setHeader("Location", "board.jsp"); //localhost:8080은 안적어도됨. 내꺼는 디폴트
+
 
         }else if(action.equals("/user.do")){
-
+            HttpSession session = req.getSession(); //request를 이용하여 세션에 접근할 수 있음.
+            session.setAttribute("email", "ssar@nate.com"); //상태를 저장. 세션을 사용한다면 statefull서버가 된다.
+            //resp.sendRedirect("/WEB-INF/views/user.jsp");// Refirection은 외부요청이라 WEB-INF에 접근못해서 안됨.
+            req.getRequestDispatcher("/WEB-INF/views/user.jsp").forward(req,resp);
         }else{
             //웹페이지->f12->네트워크창 보면 404로 state code를 바꿀 수 있다. *400번대는 클라이언트 입력 에러
             resp.setStatus(404);
